@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    p{
+        @apply text-gray
+    }
+}
+
+
+.header nav ul li a{
+    padding: 0.5rem;
+    @apply hover:text-secondary hover:border-b-2 hover:border-secondary
+}
+.tns-controls button:first-child{
+    @apply hidden md:block absolute top-[50%] z-10 left-[5%] bg-white rounded-full w-10 h-10 text-primary 
+}
+.tns-controls button:last-child{
+    @apply hidden md:block absolute top-[50%] z-10 right-[5%] bg-white rounded-full w-10 h-10 text-primary 
+}
